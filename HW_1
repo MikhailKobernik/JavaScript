@@ -1,0 +1,33 @@
+<script>
+
+
+var userAnswer = prompt('Пупа и Лупа пошли за ...');
+userAnswer = userAnswer.toLowerCase(); //преобразует все введенные буквы в строчные
+var cor = 0;
+	if (userAnswer == "зарплатой" || userAnswer == "зарплата"){
+		cor++;
+		alert ("Естесно!");
+		}
+	else
+		alert ("Бред!");
+
+
+var userAnswer1 = prompt('Не цапай за ...');
+	if (userAnswer1 == "жопоньку" || userAnswer1 == "жопаньку" || userAnswer1 == "жопку" ) {
+		cor++;
+		alert ("Естесно!");
+		}
+	else
+		alert ("Бред!");
+		
+var answer2 = ("огурцы");
+var userAnswer2 = prompt('Мы сажаем аллюминиевые ... аааааа');
+	if (answer2 == userAnswer2) {
+		cor++;
+		alert ("Естесно!");
+		}
+	else
+		alert ("Бред!");
+		
+alert ("Всего-то " + cor + " правильных ответа пффф");		
+</script>

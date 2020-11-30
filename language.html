@@ -1,6 +1,22 @@
 <script>;
 
-var words = [
+function askForWords(words){
+
+while(words.length != 0){
+	var i = parseInt(Math.random() * words.length);
+	var UserTranslate = prompt('Как переводится слово: ' + words[i][0]);
+		if(UserTranslate == words[i][1]){
+			alert('Правильно!');
+			words.splice(i, 1); //далить 1 элемент i ...1,2,3 после i)
+			
+		}else {
+			alert('Правильный ответ: ' + words[i][1]);
+		}
+}
+
+}
+
+var easywords = [
 	['food','еда'], //0 элемент
 	['bike','велосипед'],
 	['apple','яблоко'],
@@ -8,32 +24,26 @@ var words = [
 	['mean','иметь в виду'], //4 элемент
 ];
 	
-	while(words.length != 0){
-	var i = parseInt(Math.random() * words.length);
-	var UserTranslate = prompt('Как переводится слово: ' + words[i][0]);
-	if(UserTranslate == words[i][1]){
-		alert('Правильно!');
-		words.splice(i, 1); //далить 1 элемент i ...1,2,3 после i)
-		
-	}else {
-		alert('Правильный ответ: ' + words[i][1]);
-	}
+askForWords(easywords);	
 
-}
+alert("Поздравляем! Вы перешли на следующий уровень!");
 
+var hardWords = [
+	['chainsaw','бензопила'], 
+	['squirrel','белка'],
+	['castle','замок'],
+	['homeland','родина'],
+	['sewerage','канализация'], 
+	['bottom','дно'],
+];
 
+askForWords(hardWords);
 
-
-
-
+alert("Поздравляем! Вы молодец!");
 
 
 
 
 
-
-
-/*alert(words[0]); //'food','еда'
-alert(words[0][0]);	//'bike'*/
 	
 </script>;

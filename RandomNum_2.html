@@ -1,6 +1,20 @@
 <script>;
 
-	var numbers = [42, 56, 96, 14, 28];
+	var numbers = [];
+	for(var i = 0; i <5; i++ ){
+	var randomNumber = parseInt(Math.random() * 100);
+	numbers.push(randomNumber);
+	}
+
+
+
+
+
+/*numbers.push(42); //добавляет один элемент 42
+numbers.push(18); //42,18
+numbers.push(64); //42,18,64
+numbers.pop(); // удаляет последний элемент 64
+var m = numbers.pop(); //последний элемент = м*/
 
 	alert("Запомни числа и их порядок: " + numbers);
 
@@ -27,6 +41,8 @@
 		} else {
 			alert('Не верно! Правильный ответ ' + numbers [ numbers.length - 1 ]);
 		}
+
+
 	
 	
 </script>;

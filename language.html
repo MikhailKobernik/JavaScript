@@ -1,0 +1,39 @@
+<script>;
+
+var words = [
+	['food','еда'], //0 элемент
+	['bike','велосипед'],
+	['apple','яблоко'],
+	['do','делать'],
+	['mean','иметь в виду'], //4 элемент
+];
+	
+	while(words.length != 0){
+	var i = parseInt(Math.random() * words.length);
+	var UserTranslate = prompt('Как переводится слово: ' + words[i][0]);
+	if(UserTranslate == words[i][1]){
+		alert('Правильно!');
+		words.splice(i, 1); //далить 1 элемент i ...1,2,3 после i)
+		
+	}else {
+		alert('Правильный ответ: ' + words[i][1]);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*alert(words[0]); //'food','еда'
+alert(words[0][0]);	//'bike'*/
+	
+</script>;

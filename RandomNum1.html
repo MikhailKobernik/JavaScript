@@ -1,0 +1,32 @@
+<script>;
+
+	var numbers = [42, 56, 96, 14, 28];
+
+	alert("Запомни числа и их порядок: " + numbers);
+
+	var userAnswer = +prompt("Каким было первое число?");
+	if(userAnswer == numbers[0]){
+		alert("Верно!");
+		} else {
+			alert('Не верно! Правильный ответ ' + numbers [0]);
+		}
+		
+	userAnswer = +prompt("А последнее?");	
+	//alert(numbers.length);  длинна массива 5
+	alert(numbers[ numbers.length - 1 ]); //четвертый элемент массива
+	if(userAnswer == numbers[numbers.length - 1]){
+		alert("Верно!");
+		} else {
+			alert('Не верно! Правильный ответ ' + numbers [ numbers.length - 1 ]);
+		}
+		
+	var n = parseInt(Math.random() * numbers.length); // целые числа
+	userAnswer = +prompt('А число под номером ' + (n + 1) + '?');
+	if(userAnswer == numbers[ n ]){
+		alert("Верно!");
+		} else {
+			alert('Не верно! Правильный ответ ' + numbers [ numbers.length - 1 ]);
+		}
+	
+	
+</script>;
